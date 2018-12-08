@@ -1,5 +1,5 @@
 {
-  "name": "webbier",
+  "name": "emi_boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "routes.js",
@@ -49,17 +49,9 @@
     "start": "node server.js",
     "dev": "rm -rf public/js && nodemon"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/emikjackson/webbier.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/emikjackson/webbier/issues"
-  },
-  "homepage": "https://github.com/emikjackson/webbier#readme",
   "devDependencies": {
     "webpack-cli": "^3.0.8"
   }
