@@ -1,0 +1,66 @@
+{
+  "name": "webbier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "routes.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-css-modules-transform": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "css-loader": "^0.28.11",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "file-loader": "^1.1.11",
+    "har-validator": "^5.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mongoose": "^5.2.1",
+    "nodemailer": "^4.6.7",
+    "nodemon": "^1.17.5",
+    "npm": "^6.1.0",
+    "path": "^0.12.7",
+    "react": "^16.4.1",
+    "react-dom": "^16.6.3",
+    "react-hot-loader": "^4.0.0",
+    "react-router-dom": "^4.3.1",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-middleware": "^3.1.3",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-livereload-plugin": "^2.1.1"
+  },
+  "engines": {
+    "node": "8.11.3",
+    "npm": "6.1.0"
+  },
+  "scripts": {
+    "build": "webpack --display-error-details",
+    "deploy": "npm test && git push heroku master",
+    "postinstall": "npm run build",
+    "start": "node server.js",
+    "dev": "rm -rf public/js && nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emikjackson/webbier.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emikjackson/webbier/issues"
+  },
+  "homepage": "https://github.com/emikjackson/webbier#readme",
+  "devDependencies": {
+    "webpack-cli": "^3.0.8"
+  }
+}
