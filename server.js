@@ -19,23 +19,21 @@ app.use(express.static('client/style'))
 app.use(express.static(__dirname + '/dist'));
 app.engine('html', require('ejs').renderFile)
 app.set('view engine', 'html')
-
 app.set( 'port', ( process.env.PORT || 3000 ));
+app.get('/serv_side', (req, res, next) => {
+  res.sendFile(path.resolve(__dirname, './', 'ss.html'))
+})
 
-/* MongoDB Connection Establishment */
-/*
-mongoose.connect(dbConnection.connectStr, { useNewUrlParser: true });
-mongoose.connection.on('error', function() {
-  console.log('MongoDB Connection Error. Please make sure that MongoDB is running.');
-  //process.exit(1);
-});*/
+/*** LEVEL 2.0 - Set up a MongoDB connection! :) ***/
 
-/* Send all other requests to client side routing. */
+/*** LEVEL 2.1 - Add an initial API route ***/
+
+// Send all other requests to client side routing.
 app.get('*', (req, res, next) => {
   res.sendFile(path.resolve(__dirname, './client', 'index.html'))
 })
 
-/* Set Port */
+// Set port.
 app.listen(app.get( 'port' ), () => {
   console.log('Listening on port ' + app.get( 'port' ));
 });
