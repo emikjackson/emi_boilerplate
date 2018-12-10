@@ -1,9 +1,17 @@
-Hello! This small web course will attempt to cover the following 
-topics, organized into levels for excitement purposes:
+Hello! This small web course will attempt to cover the following topics, 
+organized into levels for excitement purposes:
 
 [ ] = incomplete
 [*] = complete
 
-[ ] LEVEL 1
+[*] LEVEL 0 - Set Up
 
-    [*] 
+    [*] Set up server.js/package.json/webpack, develop a minimal understanding.
+    [*] Get "cool" or some text to get served up to your browser!
+
+[ ] LEVEL 1 - Intro to HTML, React, & JavaScript
+
+    [ ] Create a simple 'navbar' like Apple's, with arbitrary links.
+    [ ] Add a 'hover' state to navbar with CSS transitions.
+    [ ] Render button objects from a JSON object using JavaScript array.map()
+    [ ] Abstract 
