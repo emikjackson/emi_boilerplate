@@ -4,14 +4,14 @@
     <title>squares-google</title>
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Rectangle" fill="#797979" fill-rule="nonzero" x="0" y="0" width="109" height="109"></rect>
-        <rect id="Rectangle" fill="#797979" fill-rule="nonzero" x="137" y="0" width="109" height="109"></rect>
-        <rect id="Rectangle" fill="#797979" fill-rule="nonzero" x="274" y="0" width="109" height="109"></rect>
-        <rect id="Rectangle" fill="#797979" fill-rule="nonzero" x="0" y="137" width="109" height="109"></rect>
-        <rect id="Rectangle" fill="#797979" fill-rule="nonzero" x="137" y="137" width="109" height="109"></rect>
-        <rect id="Rectangle" fill="#797979" fill-rule="nonzero" x="274" y="137" width="109" height="109"></rect>
-        <rect id="Rectangle" fill="#797979" fill-rule="nonzero" x="0" y="274" width="109" height="109"></rect>
-        <rect id="Rectangle" fill="#797979" fill-rule="nonzero" x="137" y="274" width="109" height="109"></rect>
-        <rect id="Rectangle" fill="#797979" fill-rule="nonzero" x="274" y="274" width="109" height="109"></rect>
+        <rect id="Rectangle" fill="#4B4B4B" fill-rule="nonzero" x="0" y="0" width="109" height="109"></rect>
+        <rect id="Rectangle" fill="#4B4B4B" fill-rule="nonzero" x="137" y="0" width="109" height="109"></rect>
+        <rect id="Rectangle" fill="#4B4B4B" fill-rule="nonzero" x="274" y="0" width="109" height="109"></rect>
+        <rect id="Rectangle" fill="#4B4B4B" fill-rule="nonzero" x="0" y="137" width="109" height="109"></rect>
+        <rect id="Rectangle" fill="#4B4B4B" fill-rule="nonzero" x="137" y="137" width="109" height="109"></rect>
+        <rect id="Rectangle" fill="#4B4B4B" fill-rule="nonzero" x="274" y="137" width="109" height="109"></rect>
+        <rect id="Rectangle" fill="#4B4B4B" fill-rule="nonzero" x="0" y="274" width="109" height="109"></rect>
+        <rect id="Rectangle" fill="#4B4B4B" fill-rule="nonzero" x="137" y="274" width="109" height="109"></rect>
+        <rect id="Rectangle" fill="#4B4B4B" fill-rule="nonzero" x="274" y="274" width="109" height="109"></rect>
     </g>
 </svg>
