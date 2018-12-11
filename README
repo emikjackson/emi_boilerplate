@@ -6,12 +6,34 @@ organized into levels for excitement purposes:
 
 [*] LEVEL 0 - Set Up
 
-    [*] Set up server.js/package.json/webpack, develop a minimal understanding.
-    [*] Get "cool" or some text to get served up to your browser!
+    [*] a. Set up server.js/package.json/webpack, develop a minimal understanding.
+    [*] b. Get "cool" or some text to get served up to your browser!
 
 [ ] LEVEL 1 - Intro to HTML, React, & JavaScript
 
-    [ ] Create a simple 'navbar' like Apple's, with arbitrary links.
-    [ ] Add a 'hover' state to navbar with CSS transitions.
-    [ ] Render button objects from a JSON object using JavaScript array.map()
-    [ ] Abstract 
+    [*] a. Create a simple 'navbar' like Apple's, with arbitrary links.
+    [*] b. Add a 'hover' state to navbar with CSS transitions.
+    [*] c. Render button objects from a JSON object using JavaScript array.map().
+    [*] d. Abstract navbar into 'Nav' component.
+    [*] e. Create footer and abstract into 'Footer' component.
+    [ ] f. Challenge: Style 'Nav' and 'Footer' to resemble Google's!
+        -  Include scaled images from 'assets' folder.
+
+    [ ] g. Organization: Move 'buttons' to data folder.
+
+[ ] LEVEL 2 - Intro to React State & Props
+
+    Set up Squares
+
+    [ ] a. Add 'Squares' as a client-side route in routes.js
+    [ ] b. Hook up the Nav link to 'Squares'
+    [ ] c. Complete the challenges on the 'Squares' page
+
+    Take the Lead! 
+
+    [ ] d. Challenge: Create your own stateful page! 
+           Your page should ...
+        -  
+
+
+[ ] LEVEL 3 - Intro to MongoDB & API Calls

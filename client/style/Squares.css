@@ -1,0 +1,55 @@
+.sq-container {
+  width: 900px;
+  margin: 0px auto;
+  position: relative;
+  /*background-color: lightcyan;*/
+}
+
+.sq-buttons-container {
+  text-align: center;
+}
+
+.sq-button {
+  padding: 7px;
+  font-size: 16px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 5px;
+  box-shadow: var(--medium-shadow);
+  background-color: rgb(255, 239, 170);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sq-button:hover {
+  background-color: rgb(245, 226, 141);
+}
+
+.sq-info {
+  text-align: center;
+  margin: 30px;
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  margin: 40px auto;
+  border-radius: 6px;
+  background-color: darkred;
+  box-shadow: var(--dark-shadow);
+  transition: 0.2s ease;
+  opacity: 1;
+}
+
+.square.hide {
+  opacity: 0;
+}
+
+.square.red {
+  background-color: darkred;
+}
+
+.square.blue {
+  background-color: midnightblue;
+}

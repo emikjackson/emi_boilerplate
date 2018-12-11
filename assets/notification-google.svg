@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="410px" height="410px" viewBox="0 0 410 410" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>notification-google</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#797979" fill-rule="nonzero" cx="205" cy="205" r="205"></circle>
+        <path d="M107,272.541733 L185.488426,273 C185.78287,283.532563 192.452538,288.798844 205.49743,288.798844 C218.542323,288.798844 225.064769,283.379807 225.064769,272.541733 L303.994861,272.541733 C296.684567,269.680493 288.144294,259.866756 278.374041,243.100521 C264.880362,219.9447 281.248696,122.355075 222.428247,107.029154 C217.364273,105.709714 222.428247,91.2156653 205.49743,91.2156653 C188.566614,91.2156653 194.059015,105.654891 189.13691,106.87607 C129.468413,121.679877 145.052039,219.703263 132.576607,243.100521 C123.57358,259.985399 115.048044,269.799136 107,272.541733 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>

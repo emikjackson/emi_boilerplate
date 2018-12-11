@@ -1,13 +1,15 @@
 import React, {Component} from 'react'
 
+// TODO: Move 'buttons' json information to a data file.
+
 let buttons = [
 	{
 		name: "About",
 		link: "https://www.google.com",
 	},
 	{
-		name: "Store",
-		link: "https://www.google.com",
+		name: "SQUARES",
+		link: "https://www.google.com", // TODO: Hook this up to the squares page!
 	},
 	{
 		name: "Gmail",
