@@ -9,7 +9,7 @@ organized into levels for excitement purposes:
     [*] a. Set up server.js/package.json/webpack, develop a minimal understanding.
     [*] b. Get "cool" or some text to get served up to your browser!
 
-[ ] LEVEL 1 - Intro to HTML, React, & JavaScript
+[*] LEVEL 1 - Intro to HTML, React, & JavaScript
 
     [*] a. Create a simple 'navbar' like Apple's, with arbitrary links.
     [*] b. Add a 'hover' state to navbar with CSS transitions.
@@ -19,7 +19,7 @@ organized into levels for excitement purposes:
     [*] f. Challenge: Style 'Nav' and 'Footer' to resemble Google's!
         -  Include scaled images from 'assets' folder.
 
-    [ ] g. Organization: Move 'buttons' to data folder.
+    [*] g. Organization: Move 'buttons' to data folder.
 
 [ ] LEVEL 2 - Intro to React State & Props
 
