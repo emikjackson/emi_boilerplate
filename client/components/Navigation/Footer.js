@@ -1,27 +1,7 @@
 import React, {Component} from 'react'
+import { getFooterButtons } from '../../../data/buttons.js'
 
-let buttons = [
-	{
-		name: "Advertising",
-		link: "https://www.google.com",
-	},
-	{
-		name: "Business",
-		link: "https://www.google.com",
-	},
-	{
-		name: "Privacy",
-		link: "https://www.google.com",
-	},
-	{
-		name: "Terms",
-		link: "https://www.google.com",
-    },
-    {
-		name: "Settings",
-		link: "https://www.google.com",
-	},
-]
+let buttons = getFooterButtons();
 
 class Footer extends Component {
 	render() {

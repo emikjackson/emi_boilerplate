@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('css'))
 app.use(express.static('assets'))
+app.use(express.static('data'))
 app.use(express.static('client/style'))
 app.use(express.static(__dirname + '/dist'));
 app.engine('html', require('ejs').renderFile)

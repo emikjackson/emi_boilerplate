@@ -1,50 +1,9 @@
 import React, {Component} from 'react'
+import { getNavButtons } from '../../../data/buttons.js'
 
 // TODO: Move 'buttons' json information to a data file.
 
-let buttons = [
-	{
-		name: "About",
-		link: "https://www.google.com",
-		isImage: false,
-	},
-	{
-		name: "SQUARES",
-		link: "https://www.google.com", // TODO: Hook this up to the squares page!
-		isImage: false,
-	},
-	{
-		name: "Profile pic",
-		link: "https://www.google.com",
-		isImage: true,
-		isProfilePic: true,
-		src: "profile_pic.png",
-	},
-	{
-		name: "Google bell",
-		link: "https://www.google.com",
-		isImage: true,
-		isProfilePic: false,
-		src: "notification-google.svg",
-	},
-	{
-		name: "Google Squares",
-		link: "https://www.google.com",
-		isImage: true,
-		isProfilePic: false,
-		src: "squares-google.svg",
-	},
-	{
-		name: "Images",
-		link: "https://www.google.com",
-		isImage: false,
-	},
-	{
-		name: "Gmail",
-		link: "https://www.google.com",
-		isImage: false,
-	},
-]
+let buttons = getNavButtons();
 
 class Nav extends Component {
 	render() {
