@@ -25,8 +25,8 @@ organized into levels for excitement purposes:
 
     Set up Squares
 
-    [ ] a. Add 'Squares' as a client-side route in routes.js
-    [ ] b. Hook up the Nav link to 'Squares'
+    [*] a. Add 'Squares' as a client-side route in routes.js
+    [*] b. Hook up the Nav link to 'Squares'
     [ ] c. Complete the challenges on the 'Squares' page
 
     Take the Lead! 

@@ -11,6 +11,7 @@ class Router extends Component {
 				<div className="nav-offset"> {/* TODO: Tell Emi what this class is for!*/}
 					<Nav/>
 					<Switch>
+						<Route path="/squares" component={Squares}/>
 						{/* TODO: Add your first client-side route! Let's hook-up 'Squares' to '/squares' */}
 					</Switch>
 					<Footer/>

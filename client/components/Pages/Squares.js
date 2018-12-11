@@ -6,27 +6,27 @@ class Squares extends Component {
 		super(props);
 		this.state = {
 			hidden: false,
-			blue: false,
+			color: " red"
 			/* TODO: Add some variables to state */
 		}
 
-		this.hideSquare = this.hideSquare.bind(this);
-		this.showSquare = this.showSquare.bind(this);
+		this.toggleSquareVisible = this.toggleSquareVisible.bind(this);
+		this.toggleSquareColor = this.toggleSquareColor.bind(this);
 		/* TODO: Bind some more functions! */
 	}
 
-	hideSquare() {
-		this.setState({hidden: true});
+	toggleSquareVisible() {
+		this.setState({hidden: !this.state.hidden});
 	}
 
-	showSquare() {
-		this.setState({hidden: false});
+	toggleSquareColor() {
+		this.setState({color: this.state.color == " blue" ? " red" : " blue"});
 	}
 
 	/* TODO: Create some more functions! */
 
 	render() {
-		let squareCSS = 'square';
+		let squareCSS = 'square' + this.state.color;
 		if (this.state.hidden) {
 			squareCSS += ' hide';
 		}
@@ -38,12 +38,11 @@ class Squares extends Component {
 					<div className="sq-buttons-container">
 
 						{/* TODO: Combine these two buttons into one button which toggles the square's visibility */}
-						<div className="sq-button" onClick={this.hideSquare}>Hide Square</div>
-						<div className="sq-button" onClick={this.showSquare}>Show Square</div>
+						<div className="sq-button" onClick={this.toggleSquareVisible}>Toggle Square Visible</div>
 
 						{/* TODO: Create a new function to change the square's color */}
 						{/* Note: Remove 'todo' CSS class when ready to start */}
-						<div className="sq-button todo">Turn Square Blue</div>
+						<div className="sq-button" onClick={this.toggleSquareColor}>Toggle Square Color</div>
 
 						{/* TODO: Create new functions for the following features. */}
 						<div className="sq-button todo">Add a Square</div>     {/* Set maximum at 5 */}

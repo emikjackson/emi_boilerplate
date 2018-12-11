@@ -8,7 +8,7 @@ export function getNavButtons() {
         },
         {
             name: "SQUARES",
-            link: "https://www.google.com", // TODO: Hook this up to the squares page!
+            link: "squares", // TODO: Hook this up to the squares page!
             isImage: false,
         },
         {

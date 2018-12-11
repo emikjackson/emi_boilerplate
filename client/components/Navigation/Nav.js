@@ -18,7 +18,7 @@ class Nav extends Component {
 							let image_classes = button.isProfilePic ? "profile-picture" : ""
 							return(<img key={`nav-k${idx}`} className={`nav-button ${nav_group} nav-image ${image_classes}`} src={button.src} alt="Google squares"/>)
 						} else {
-							return(<a key={`nav-k${idx}`} onClick={cool} className={`nav-button ${nav_group}`} target="_blank">{button.name}</a>)
+							return(<a key={`nav-k${idx}`} href={button.link} className={`nav-button ${nav_group}`}>{button.name}</a>)
 						}
 					})}
 					
