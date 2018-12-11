@@ -16,7 +16,7 @@ organized into levels for excitement purposes:
     [*] c. Render button objects from a JSON object using JavaScript array.map().
     [*] d. Abstract navbar into 'Nav' component.
     [*] e. Create footer and abstract into 'Footer' component.
-    [ ] f. Challenge: Style 'Nav' and 'Footer' to resemble Google's!
+    [*] f. Challenge: Style 'Nav' and 'Footer' to resemble Google's!
         -  Include scaled images from 'assets' folder.
 
     [ ] g. Organization: Move 'buttons' to data folder.

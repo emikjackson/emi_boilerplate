@@ -4,6 +4,9 @@
 	--medium-shadow: 0 2px 8px rgba(0,0,0,.11);
   --dark-shadow: 0 4px 6px rgba(0,0,0,.15);
   --nav-height: 44px;
+  --light-grey: #f2f2f2;
+  --medium-grey: #e4e4e4;
+  --space-on-side-nav: 20px;
 }
 
 body {
@@ -12,12 +15,13 @@ body {
 }
 
 .nav {
-  width: 100%;
+  width: calc(100% - 2 * var(--space-on-side-nav));
   height: var(--nav-height);
   background-color: darkgoldenrod;
   position: fixed;
   top: 0;
   left: 0;
+  padding: 20px var(--space-on-side-nav);
   background-color: white;
   text-align: center;
 }
@@ -50,14 +54,36 @@ body {
   margin-top: var(--nav-height);
 }
 
+.nav-image {
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+}
+
+.nav-image:hover {
+  opacity: 1.0;
+}
+
+.profile-picture {
+  border-radius: 35px;
+  width: 35px;
+  height: 35px;
+  padding: 6px 5px;
+}
+
+.nav-image.profile-picture {
+  opacity: 1.0;
+}
+
 .footer {
-  background-color: lightgray;
+  background-color: var(--light-grey);
   position: fixed;
-  width: 100%;
+  width: calc(100% - 2 * var(--space-on-side-nav));
   height: 44px;
   bottom: 0;
   left: 0;
-  border-top: 1px solid darkgray;
+  padding: 0px var(--space-on-side-nav);
+  border-top: 1px solid var(--medium-grey);
 }
 
 .page-title {

@@ -6,18 +6,43 @@ let buttons = [
 	{
 		name: "About",
 		link: "https://www.google.com",
+		isImage: false,
 	},
 	{
 		name: "SQUARES",
 		link: "https://www.google.com", // TODO: Hook this up to the squares page!
+		isImage: false,
 	},
 	{
-		name: "Gmail",
+		name: "Profile pic",
 		link: "https://www.google.com",
+		isImage: true,
+		isProfilePic: true,
+		src: "profile_pic.png",
+	},
+	{
+		name: "Google bell",
+		link: "https://www.google.com",
+		isImage: true,
+		isProfilePic: false,
+		src: "notification-google.svg",
+	},
+	{
+		name: "Google Squares",
+		link: "https://www.google.com",
+		isImage: true,
+		isProfilePic: false,
+		src: "squares-google.svg",
 	},
 	{
 		name: "Images",
 		link: "https://www.google.com",
+		isImage: false,
+	},
+	{
+		name: "Gmail",
+		link: "https://www.google.com",
+		isImage: false,
 	},
 ]
 
@@ -29,13 +54,15 @@ class Nav extends Component {
 		return(
 				<div className="nav">
 					{buttons.map((button, idx) => {
-						if (idx < 2) {
-							return(<a key={`nav-k${idx}`} onClick={cool} className="nav-button left-nav-group" target="_blank">{button.name}</a>)
+						let nav_group = idx < 2 ? "left-nav-group" : "right-nav-group";
+						if (button.isImage) {
+							let image_classes = button.isProfilePic ? "profile-picture" : ""
+							return(<img key={`nav-k${idx}`} className={`nav-button ${nav_group} nav-image ${image_classes}`} src={button.src} alt="Google squares"/>)
 						} else {
-							return(<a key={idx} onClick={cool} className="nav-button right-nav-group" target="_blank">{button.name}</a>)
+							return(<a key={`nav-k${idx}`} onClick={cool} className={`nav-button ${nav_group}`} target="_blank">{button.name}</a>)
 						}
-						
 					})}
+					
 				</div>
 		);
 	}
