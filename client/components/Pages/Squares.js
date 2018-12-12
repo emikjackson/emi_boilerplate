@@ -6,13 +6,16 @@ class Squares extends Component {
 		super(props);
 		this.state = {
 			hidden: false,
-			color: " red"
-			/* TODO: Add some variables to state */
+			color: " red",
+			num_squares: 1,
+			spin: false,
 		}
 
 		this.toggleSquareVisible = this.toggleSquareVisible.bind(this);
 		this.toggleSquareColor = this.toggleSquareColor.bind(this);
-		/* TODO: Bind some more functions! */
+		this.addSquare = this.addSquare.bind(this);
+		this.removeSquare = this.removeSquare.bind(this);
+		this.toggleSpin = this.toggleSpin.bind(this);
 	}
 
 	toggleSquareVisible() {
@@ -23,13 +26,34 @@ class Squares extends Component {
 		this.setState({color: this.state.color == " blue" ? " red" : " blue"});
 	}
 
-	/* TODO: Create some more functions! */
+	addSquare() {
+		if (this.state.num_squares < 5) {
+			this.setState({num_squares: this.state.num_squares + 1});
+		}
+	}
+
+	removeSquare() {
+		if (this.state.num_squares > 1) {
+			this.setState({num_squares: this.state.num_squares - 1});
+		}
+	}
+
+	toggleSpin() {
+		this.setState({spin: !this.state.spin});
+	}
 
 	render() {
-		let squareCSS = 'square' + this.state.color;
+		let squareCSS = 'square ' + this.state.color;
 		if (this.state.hidden) {
 			squareCSS += ' hide';
 		}
+		if (this.state.spin) {
+			squareCSS += ' spin-animation';
+		}
+		let squares = [];
+		for (let i = 0; i < this.state.num_squares; ++i) {
+			squares.push(<div key={`square-${i}`} id='square' className={squareCSS}/>);
+	   	}
 
 		return(
 				<div className="sq-container">
@@ -37,22 +61,19 @@ class Squares extends Component {
 					<div className="sq-info">Yellow buttons have been implemented. Grey ones have yet to be implemented (by you! :D).</div>
 					<div className="sq-buttons-container">
 
-						{/* TODO: Combine these two buttons into one button which toggles the square's visibility */}
-						<div className="sq-button" onClick={this.toggleSquareVisible}>Toggle Square Visible</div>
+						<div className="sq-button noselect" onClick={this.toggleSquareVisible}>Toggle Square Visible</div>
 
-						{/* TODO: Create a new function to change the square's color */}
-						{/* Note: Remove 'todo' CSS class when ready to start */}
-						<div className="sq-button" onClick={this.toggleSquareColor}>Toggle Square Color</div>
+						<div className="sq-button noselect" onClick={this.toggleSquareColor}>Toggle Square Color</div>
 
-						{/* TODO: Create new functions for the following features. */}
-						<div className="sq-button todo">Add a Square</div>     {/* Set maximum at 5 */}
-						<div className="sq-button todo">Delete a Square</div>  {/* Set minimum at 1 */}
+						<div className="sq-button noselect" onClick={this.addSquare}>Add a Square</div>
+						<div className="sq-button noselect" onClick={this.removeSquare}>Delete a Square</div>  
 
-						{/* OPTIONAL CHALLENGE */}
-						<div className="sq-button todo">Spin Square!</div>
+						<div className="sq-button noselect" onClick={this.toggleSpin}>Spin Square!</div>
 
 					</div>
-					<div id='square' className={squareCSS}/>
+					{squares.map((square) => {
+						return (square);
+					})}
 				</div>
 		);
 	}
