@@ -8,7 +8,12 @@ export function getNavButtons() {
         },
         {
             name: "SQUARES",
-            link: "squares", // TODO: Hook this up to the squares page!
+            link: "squares",
+            isImage: false,
+        },
+        {
+            name: "LOGIN_CNK",
+            link: "login",
             isImage: false,
         },
         {
