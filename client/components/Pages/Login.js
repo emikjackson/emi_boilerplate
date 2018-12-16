@@ -17,6 +17,7 @@ class Login extends Component {
 		return(
 		    <div className="login-container">
 				<h1>Login</h1>
+                <div className="lgn-table"></div>
 			</div>
 		);
 	}

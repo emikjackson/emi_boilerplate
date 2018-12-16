@@ -3,4 +3,14 @@
     margin: 0px auto;
     position: relative;
     /*background-color: lightcyan;*/
+    text-align: center;
+  }
+
+  .lgn-table {
+      width: 400px;
+      height: 600px;
+      margin: 0px auto;
+      position: relative;
+      background: lightblue;
+      border-radius: 2em;
   }
