@@ -17,7 +17,13 @@ class Login extends Component {
 		return(
 		    <div className="login-container">
 				<h1>Login</h1>
-                <div className="lgn-table"></div>
+                <div className="lgn-table">
+					<div className="logo"></div>
+					<div className="text-box-container">
+						<div className="text-box"></div>
+						<div className="text-box"></div>
+					</div>
+				</div>
 			</div>
 		);
 	}
