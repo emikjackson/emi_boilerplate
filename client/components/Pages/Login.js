@@ -7,18 +7,28 @@ class Login extends Component {
 		this.state = {
 			username: '',
 			password: '',
+			keepSignedIn: true,
 		};
 
 		// Bind the functions
 		this.handleChange = this.handleChange.bind(this);
-    	this.handleSubmit = this.handleSubmit.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
+		this.handleForgotPassword = this.handleForgotPassword.bind(this);
 	}
 
 	// functions
 	handleChange(event) {
+		const target = event.target;
+		const value = target.type === 'checkbox' ? target.checked : target.value;
+		const name = target.name;
+
 		this.setState({
-			[event.target.name]: event.target.value
+			[name]: value
 		});
+	}
+
+	handleForgotPassword() {
+		alert('forgot password');
 	}
 	
 	handleSubmit(event) {
@@ -43,11 +53,23 @@ class Login extends Component {
 							<div className="text-box">
 								<label>
 									Password:
-									<input type="text" name="password" value={this.state.password} onChange={this.handleChange} />
+									<input type="password" name="password" value={this.state.password} onChange={this.handleChange} />
 								</label>
 							</div>
+							<label>
+								<input 
+									name="keepSignedIn" 
+									type="checkbox" 
+									checked={this.state.keepSignedIn} 
+									onChange={this.handleChange} />
+									Keep me signed in
+							</label>
+							<br/>
 							<input type="submit" value="Submit" />
 						</form>
+						<button onClick={this.handleForgotPassword}>
+							Forgot password?
+						</button>
 					</div>
 				</div>
 			</div>
